@@ -1,0 +1,425 @@
+
+  html{
+    cursor: url("../images/CursorStawberry1.png"), auto;
+    height: 100%;
+  }
+
+  :any-link{
+    cursor: url("../images/CursorStawberry1.png"), auto;
+  }
+
+  * {
+    scrollbar-width:thin;
+    scrollbar-color: #424242  #8a8a8a;
+    box-sizing: border-box;
+  }
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+  body{
+    background-image: url("../images/stars2.gif");
+    background-size:auto;
+    font-family: "Jersey 10";
+  }
+
+  button{
+    cursor: url("../images/CursorStawberry1.png"), auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .Dad{
+    position: relative;
+  }
+
+ .PlatesBox{
+  top: 16em;
+  left: 81.5em;
+  position: absolute;
+  display: inline-grid;
+  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: 30px;
+ }
+
+ .PlatesBox > div{
+  text-align: center;
+ }
+
+  figure{
+    display: inline-block;
+    margin: 20px;
+    font-size: larger;
+  }
+
+  figure img{
+    vertical-align: top;
+    cursor: url("../images/CursorStawberry1.png"), auto;
+  }
+  figure figcaption{
+    text-align: center;
+  }
+  .Folder1{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    color: #facdbe;
+
+  }
+  .Folder2{
+    position: absolute;
+    top: 250px;
+    left: 60px;
+    color: #facdbe;
+
+  }
+  .Folder3{
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    color: #facdbe;
+
+  }
+  .Folder4{
+    position: absolute;
+    top: 550px;
+    left: 60px;
+    color: #facdbe;
+
+  }
+  .Folder5{
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    color: #facdbe;
+  }
+
+  .Decor{
+    position: absolute;
+    top: 20px;
+    left: 1500px;
+    z-index: 999;
+  }
+
+  .window{
+    background: rgb(204, 203, 203);
+   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    position: absolute;
+    width: 500px;
+   z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(250%, -10%);
+  }
+  
+  .mySlides{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+  .title-bar{
+    align-items: center;
+     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
+     background-color: rgba(0, 0, 0, 0);
+     background-position-x: 0%;
+     background-position-y: 0%;
+     background-repeat: repeat;
+     background-attachment: scroll;
+     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
+      background-size: auto;
+      background-origin: padding-box;
+     background-clip: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-right: 2px;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+  }
+  .title-bar-text{
+    padding-left: 10px;
+    font-size: 1.5em;
+  }
+
+  .title-bar-controls button{
+    margin-top: 8px;
+    border: none;
+   border-radius: 0;
+   box-sizing: border-box;
+   color: transparent;
+   min-height: 20px;
+   min-width: 20px;
+   text-shadow: 0 0 #222;
+   background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  }
+  .title-bar-controls button[aria-label="Minimize"]{
+    background-image: url(../images/IconMinimizeGray.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 3px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+}
+.title-bar-controls button[aria-label="Maximize"]{
+    background-image: url(../images/IconMaximizeGray.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 4px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+}
+.title-bar-controls button[aria-label="Close"]{
+    background-image: url(../images/IconCloseGray.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 3px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+}
+
+.window-body{
+  position: relative;
+  z-index: 99;
+}
+
+.title-bar-text-pop{
+    padding-left: 10px;
+    font-size: 1.5em;
+  }
+
+  .title-bar-controls-pop button[aria-label="Close-pop"]{
+    background-image: url(../images/IconClose-02.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 3px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+  }
+
+  .title-bar-controls-pop button[aria-label="Maximize-pop"]{
+    background-image: url(../images/IconMaximizeGray.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 4px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+  }
+
+  .title-bar-controls-pop button[aria-label="Minimize-pop"]{
+    background-image: url(../images/IconMinimizeGray.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 3px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+  }
+
+  .title-bar-pop{
+    align-items: center;
+     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
+     background-color: rgba(0, 0, 0, 0);
+     background-position-x: 0%;
+     background-position-y: 0%;
+     background-repeat: repeat;
+     background-attachment: scroll;
+     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
+      background-size: auto;
+      background-origin: padding-box;
+     background-clip: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-right: 2px;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+    width: 99%;
+  }
+
+  .title-bar-controls-pop button{
+    margin-top: 8px;
+    border: none;
+   border-radius: 0;
+   box-sizing: border-box;
+   color: transparent;
+   min-height: 20px;
+   min-width: 20px;
+   text-shadow: 0 0 #222;
+   background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  }
+
+  .title-bar-controls-pop button[aria-label="Close-pop"]:hover{
+    background-image: url(../images/IconClose-02.png);
+    width: 6px;
+    height: 2px;
+    background-position-x: left 3px;
+    background-position-y: bottom 4px;
+    background-repeat: no-repeat;
+    background-color: gray;
+  }
+
+  .popup {
+    background: rgb(204, 203, 203);
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    z-index: 100;
+  }
+
+ .popup-window-body {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    max-width: 95%;
+    max-height: 100%;
+   overflow-y: auto;
+   padding: 10px;
+   }
+
+ .popup-window-body img{
+  position: relative;
+ }
+
+ .popup img {
+  float: left;
+    margin: 15px ;
+  }
+
+@media only screen and (max-width: 1850px){
+  .PlatesBox{
+   top: 16em;
+    left: 1200px;
+   position: absolute;
+   display: inline-grid;
+   grid-template-columns: 180px 180px 180px;
+   grid-template-rows: 30px;}
+  .Decor{
+    position: absolute;
+    top: 20px;
+    left: 1360px;
+    z-index: 999; }
+ .window{
+    background: rgb(204, 203, 203);
+   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px;
+    position: absolute;
+    width: 500px;
+   z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(1165px, -10%);
+  }
+
+}
+
+@media only screen and (max-width: 1720px){
+  .Folder1{
+    top: 100px;
+    left: 60px;}
+  .Folder2{
+    top: 250px;
+    left: 60px;}
+  .Folder3{
+    top: 400px;
+    left: 60px;}
+  .Folder4{
+    top: 100px;
+    left: 230px;}
+  .Folder5{
+    top: 250px;
+    left: 230px;}
+  .PlatesBox{
+   top: 16em;
+    left: 933px;}
+  .Decor{
+    top: 20px;
+    left: 1100px;}
+ .window{
+    padding: 3px;
+    width: 500px;
+   z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(900px, -10%);}
+}
+
+@media only screen and (max-width: 1450px){
+  .PlatesBox{
+   top: 16em;
+    left: 723px;}
+  .Decor{
+    top: 20px;
+    left: 900px;}
+ .window{
+    padding: 3px;
+    width: 500px;
+   z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(700px, -10%);}
+}
+
+@supports (-webkit-appearance:none){
+  .title-bar-controls button[aria-label="Minimize"]{
+    background-image: url(../images/IconMinimizeGray.png) no-repeat;
+    background-position: left 2px bottom 4px;}
+
+    .title-bar-controls button[aria-label="Maximize"]{
+    background-image: url(../images/IconMaximizeGray.png) no-repeat;
+    background-position: left 3px bottom 4px;}
+
+.title-bar-controls button[aria-label="Close"]{
+    background-image: url(../images/IconCloseGray.png) no-repeat;
+    background-position: left 3px bottom 4px;}
+
+.title-bar-controls-pop button[aria-label="Close-pop"]{
+  background-image: url(../images/IconCloseGray.png) no-repeat;
+  background-position: left 3px bottom 4px;}
+
+  .title-bar-controls-pop button[aria-label="Maximize-pop"]{
+    background-image: url(../images/IconMaximizeGray.png) no-repeat;
+    background-position: left 3px bottom 4px;}
+
+  .title-bar-controls-pop button[aria-label="Minimize-pop"]{
+    background-image: url(../images/IconMinimizeGray.png) no-repeat;
+    background-position: left 2px bottom 4px;
+    width: 6px;
+    height: 2px;
+  }
+}

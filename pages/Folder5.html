@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Photography</title>
+    <title>༚✧༚ Traditional_Art.page ༚✧༚</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style2.css">
+
 <style>
-
-* {
-    scrollbar-width:thin;
-    scrollbar-color: #424242  #8a8a8a;
-    box-sizing: border-box;
-  }
-
-  html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  html{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  :any-link{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
-  button{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
 body{
     background-image: url("../images/backstar.gif");
     background-size:auto;
@@ -43,368 +16,34 @@ body{
     cursor: url("../images/CursorStawberry1.png"), auto;
     min-height: 100%;
   }
-
-  #page-wrapper{
-    position: relative;
-    min-height: 100%;
-    overflow: visible;
-  }
-
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 35em;
-    height: 7em;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-  .window{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    position: absolute;
-    width: 550px;
-   z-index: 99;
-  }
-  
-
-  .title-bar{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-  .title-bar-controls button[aria-label="Minimize"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Maximize"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Close"]{
-    background-image: url(../images/IconCloseGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.window-body{
-  position: relative;
-  z-index: 99;
-}
-
-.title-bar-text{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-.mySlides{
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 500px;
-  height: 500px;
-  margin: auto;
-}
-
-
-.thumb{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-  .mySlides img:hover{
-    opacity: .5; 
-  }
-
-  .popup {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
- .popup-window-body {
-    font-family: Arial, sans-serif;
-    max-width: 99%;
-    max-height: 100%;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-   overflow-y: auto;
-   text-align: center;
- }
-
- .popup img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .popup iframe{
-    min-width: 75%;
-    min-height: 75%;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-   font-size: 30px;
-    color: white;
-   cursor: pointer;
-  } 
-
-  .title-bar-text-pop{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]{
-    background-image: url(../images/IconClose-02.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Maximize-pop"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Minimize-pop"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-pop{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    width: 99%;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls-pop button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]:hover{
-    background-image: url(../images/IconClose-02.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-    background-color: gray;
-  }
-
-  .popup-sq {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
-  .popup-sq-2 img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .popup-sq-2 {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
-  .popup-sq img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .NavBar{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 50%;
-    height: 186px;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-
-.spacer{
+  .spacer{
   position: absolute;
-  top: 225%;
+  top: 160%;
   left: 50%;
   transform: translate(50%, -50%);
 } 
+ @media only screen and (max-width: 1800px){
+     .spacer{
+     top: 1300px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+    }
 
-figure{
-    display: inline-block;
-    margin: 2px;
-  }
-  figure img{
-    vertical-align: middle;
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-  figure figcaption{
-    text-align: center;
-    transform: translateY(-20px);
-    font-size: x-large;
-  }
-
-  .home{
-    position: relative;
-  }
+    @media only screen and (max-width: 1450px){
+    .spacer{
+     top: 1800px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+    }
+      @media only screen and (max-width: 1300px){
+      .spacer{
+       top: 1800px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+      }
 
 </style>
 
@@ -614,7 +253,7 @@ figure{
 
 <body>
 <div id="page-wrapper">
-  <div class="topbar" style="top: 0px">
+    <div class="topbar" style="top: 0px">
     <div class="title-bar">
       <div class="title-bar-text">Navigation.bar</div>
       <div class="title-bar-controls">
@@ -626,7 +265,7 @@ figure{
     <div class="window-body">
       <div class="NavBar">
         <figure class="home">
-          <a href="/root/">
+          <a href="../index.html">
             <img src="../images/Icons/IconHome1.png" alt="">
             <figcaption>
               Home
@@ -635,7 +274,7 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder2.html">
+          <a href="Folder2.html">
             <img src="../images/Icons/Icon3D1.png" alt="">
             <figcaption>
               3D Art
@@ -644,25 +283,25 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder4.html">
+          <a href="Folder4.html">
             <img src="../images/Icons/IconDig1.png" alt="">
             <figcaption>
               Digital Art
             </figcaption>
           </a>
         </figure>
-
+        <!--
         <figure class="home">
-          <a href="/root/pages/Folder3.html">
+          <a href="Folder3.html">
             <img src="../images/Icons/IconPhoto1.png" alt="">
             <figcaption>
               Photography
             </figcaption>
           </a>
         </figure>
-
+      -->
         <figure class="home">
-          <a href="/root/pages/Folder5.html">
+          <a href="Folder5.html">
             <img src="../images/Icons/IconTrad1.png" alt="">
             <figcaption>
               Traditional Art
@@ -673,7 +312,7 @@ figure{
     </div>
   </div>
 
-  <div class="window" style="left: 3%; top: 256px">
+  <div class="window3">
     <div class="title-bar">
       <div class="title-bar-text">Nine</div>
       <div class="title-bar-controls">
@@ -700,16 +339,32 @@ figure{
     </div>
       <div class="popup-window-body">
         <h1>Nine</h1>
+        <h4>
+          Fall 2024 <br>
+          Ink on Bristol Board
+        </h4>
         <h5>
-          This gun was forged long before the golden age, a ceremonial weapon for the Empress of Roses. Centuries after the Guardian brought this weapon back into service, a handful of modifications made it a force to be reckoned with, a medium scope, high calibur rounds, paired with light conduits all along the barrel allowing for pure light to be infused into each round. The Empress may be gone but her gift lives on, still striking feat into the hearts of her newfound enemies. 
+          <i>Nine</i> is a series of nine different abstract geometric drawings. 
+          Each drawing is independent from the others. Nine was largely a technical 
+          exercise with geometric compositions. 
+          <br>
+          Starting from the top left drawing and going right 
+          then down they are titled: <i>Tower, Holiday, Opus 9 Number 1, 
+          Gamble, ninety-five, Cycle, Fracture, Travel, and End. </i>
+          <br>
+          <br>
+          <i>Nine</i> was created with ink on bristol board.
+
         </h5>
-       <img src="../images/Website Art/Trad/Nine.jpg" alt="Image 1-2" style="width: 80%;">
+        <a href="../images/Website Art/Trad/Nine.jpg" target="_blank">
+         <img src="../images/Website Art/Trad/Nine.jpg" alt="Image 1-2" style="width: 80%;">
+       </a>
      </div>
   </div>
 
-<div class="window" style="left: 36%; top: 256px">
+<div class="window1" >
   <div class="title-bar">
-    <div class="title-bar-text">Spear_Named_Poke</div>
+    <div class="title-bar-text">Award</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -718,14 +373,14 @@ figure{
   </div>
   <div class="window-body">
     <div class="mySlides" style="display:block">
-      <img class="thumb" src="../images/Website Art/Trad/SpearThumb.jpg" alt="" onclick="openPopup('popup2')">
+      <img class="thumb" src="../images/Website Art/Trad/Medal1.jpg" alt="" onclick="openPopup('popup2')">
     </div>
   </div>
 </div>
 
 <div class="popup-sq" id="popup2">
   <div class="title-bar-pop"> 
-    <div class="title-bar-text-pop">poke.gallery</div>
+    <div class="title-bar-text-pop">award.gallery</div>
     <div class="title-bar-controls-pop">
       <button aria-label="Minimize-pop"></button>
       <button aria-label="Maximize-pop" ></button>
@@ -733,20 +388,35 @@ figure{
     </div>
   </div>
     <div class="popup-window-body">
-      <h1>Spear Named Poke</h1>
+      <h1>#1 Deadbeat Parent Award</h1>
+      <h4>
+        Fall 2025 <br>
+        Loss Wax Casting, Cast Aluminum
+      </h4>
       <h5>
-        A forgotten helmet left by an esoteric group of druids.
+        <i>#1 Deadbeat Parent Award</i> is a small sculpture cast in aluminum to commemorate all the 
+        deadbeats in the world. The central skull plays into the term deadbeat, accentuating 
+        the idea that a deadbeat being alive or not would not make a noticeable difference. 
+        <br>
+        <br>
+        <i>#1 Deadbeat Parent Award</i> was created with lost wax casting and cast aluminum.
       </h5>
-     <img src="../images/Website Art/Trad/Spear1.jpg" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/Trad/Spear2.jpg" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/Trad/Spear3.jpg" alt="Image 1-1" style="width: 75%;">
+      <a href="../images/Website Art/Trad/Medal1.jpg" target="_blank">
+       <img src="../images/Website Art/Trad/Medal1.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/Trad/Medal2.jpg" target="_blank">
+        <img src="../images/Website Art/Trad/Medal2.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
+     <a href="../images/Website Art/Trad/Medal3.jpg" target="_blank">
+        <img src="../images/Website Art/Trad/Medal3.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
    </div>
 </div>
 
 
-<div class="window" style="left: 69%; top: 256px">
+<div class="window0" >
   <div class="title-bar">
-    <div class="title-bar-text">Wireframe_Arizona</div>
+    <div class="title-bar-text">Dreamy_Prints</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -755,14 +425,14 @@ figure{
   </div>
   <div class="window-body">
     <div class="mySlides" style="display:block">
-      <img class="thumb" src="../images/Website Art/Trad/SCWire1.jpg" alt="" onclick="openPopup('popup3')">
+      <img class="thumb" src="../images/Website Art/Trad/DreamOfThumb.png" alt="" onclick="openPopup('popup3')">
     </div>
   </div>
 </div>
 
-<div class="popup-sq-2" id="popup3">
+<div class="popup-sq" id="popup3">
   <div class="title-bar-pop"> 
-    <div class="title-bar-text-pop">wirecan.gallery</div>
+    <div class="title-bar-text-pop">dreamyprint.gallery</div>
     <div class="title-bar-controls-pop">
       <button aria-label="Minimize-pop"></button>
       <button aria-label="Maximize-pop" ></button>
@@ -770,20 +440,93 @@ figure{
     </div>
   </div>
     <div class="popup-window-body">
-      <h1>Wireframe Arizona</h1>
+      <h1>Dream of Pink Lemonade <br> Dream of Summer</h1>
+      <h4>
+        Spring 2026 <br>
+        Silk Screen Printing - Photoshop
+      </h4>
       <h5>
-        I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+        <i>Dream of Pink Lemonade / Dream of Summer </i>are abstracted versions 
+        of portraits with varied colors. A silhouette of a person’s face with an abstract
+         halftone design inside creates a rather simplistic version of a portrait. Heavy 
+         linework above and behind the head pulls the viewer’s eyes horizontally across the 
+         design. The background is a halftone gradient printed in a color gradient to create 
+         a unique visual with the paper showing through.
+         <br>
+         <br>
+         <i>Dream of Pink Lemonade / Dream of Summer </i> are silkscreen prints that had their stencils created in Adobe Photoshop.
+
       </h5>
-      <img src="../images/Website Art/Trad/SCWire1.jpg" alt="Image 1-1" style="width: 75%;">
-      <img src="../images/Website Art/Trad/SCWire2.jpg" alt="Image 1-1" style="width: 75%;">
-      <img src="../images/Website Art/Trad/SCWire3.jpg" alt="Image 1-1" style="width: 75%;">
-      <img src="../images/Website Art/Trad/SCWire4R.jpg" alt="Image 1-1" style="width: 75%;">
+      <a href="../images/Website Art/Trad/DreamofPinkLemonade.JPG" target="_blank">
+        <img src="../images/Website Art/Trad/DreamofPinkLemonade.JPG" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/Trad/DreamofSummer.JPG" target="_blank">
+        <img src="../images/Website Art/Trad/DreamofSummer.JPG" alt="Image 1-1" style="width: 75%;">
+      </a>
+
+
 
 
 
    </div>
 </div>
 
+
+<div class="window2" >
+  <div class="title-bar">
+    <div class="title-bar-text">Marble</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="mySlides" style="display:block">
+      <img class="thumb" src="../images/Website Art/Trad/MarbleThumb.png" alt="" onclick="openPopup('popup5')">
+    </div>
+  </div>
+</div>
+
+<div class="popup-sq-2" id="popup5">
+  <div class="title-bar-pop"> 
+    <div class="title-bar-text-pop">marble.gallery</div>
+    <div class="title-bar-controls-pop">
+      <button aria-label="Minimize-pop"></button>
+      <button aria-label="Maximize-pop" ></button>
+      <button aria-label="Close-pop" onclick="closePopup('popup5')" ></button>
+    </div>
+  </div>
+    <div class="popup-window-body">
+      <h1>Marble / Marble Misprint</h1>
+      <h4>
+        Spring 2026 <br>
+        Silk Screen Printing - Photoshop - Blender
+      </h4>
+      <h5>
+          <i>Marble / Marble Misprint</i> is an abstract print that wildly draws the viewer’s attention
+           across the page. The background is a halftone abstract design made to look similar to marble 
+           but far smoother. The subject of the piece is not meant to be representational but rather appear 
+           differently to different viewers. 
+           <br>
+           <br>
+           <i>Marble / Marble Misprint</i> are silkscreen prints that had their stencils created in Adobe Photoshop and Blender.
+
+      </h5>
+      <a href="../images/Website Art/Trad/Marble.JPG" target="_blank">
+        <img src="../images/Website Art/Trad/Marble.JPG" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/Trad/MarbleMisprints.JPG" target="_blank">
+       <img src="../images/Website Art/Trad/MarbleMisprints.JPG" alt="Image 1-1" style="width: 75%;">
+      </a>
+
+
+
+
+
+   </div>
+</div>
+<div class="spacer" style="background-color: #0a0a0a;opacity: 0;">Stop Looking At This</div>
 
 <!---->
 

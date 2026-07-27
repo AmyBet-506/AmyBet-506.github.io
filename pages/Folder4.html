@@ -1,397 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Digital Art</title>
+    <title>༚✧༚ Digital_Art.page ༚✧༚</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+
 <style>
 
-* {
-    scrollbar-width:thin;
-    scrollbar-color: #424242  #8a8a8a;
-    box-sizing: border-box;
-  }
-
-  html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  html{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  :any-link{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
-  button{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
 body{
-    background-image: url("../images/stars\ 10.gif");
+    background-image: url("../images/stars10.gif");
     background-size:auto;
     font-family: "Jersey 10";
     cursor: url("../images/CursorStawberry1.png"), auto;
     min-height: 100%;
   }
-
-  #page-wrapper{
-    position: relative;
-    min-height: 100%;
-    overflow: visible;
-  }
-
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 35em;
-    height: 7em;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-  .window{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    position: absolute;
-    width: 550px;
-   z-index: 99;
-  }
-  
-
-  .title-bar{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-  .title-bar-controls button[aria-label="Minimize"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Maximize"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Close"]{
-    background-image: url(../images/IconCloseGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.window-body{
-  position: relative;
-  z-index: 99;
-}
-
-.title-bar-text{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-.mySlides{
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 500px;
-  height: 500px;
-  margin: auto;
-}
-
-
-.thumb{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-  .mySlides img:hover{
-    opacity: .5; 
-  }
-
-  .popup {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
- .popup-window-body {
-    font-family: Arial, sans-serif;
-    max-width: 99%;
-    max-height: 100%;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-   overflow-y: auto;
-   text-align: center;
- }
-
- .popup-window-body-video {
-    font-family: Arial, sans-serif;
-    width: 75%;
-    height: 100%;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-   overflow-y: auto;
-   text-align: center;
- }
-
-
- .popup img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .popup iframe{
-    min-width: 75%;
-    min-height: 75%;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-   font-size: 30px;
-    color: white;
-   cursor: pointer;
-  } 
-
-  .title-bar-text-pop{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]{
-    background-image: url(../images/IconClose-02.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Maximize-pop"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Minimize-pop"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-pop{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    width: 99%;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls-pop button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]:hover{
-    background-image: url(../images/IconCloseGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-    background-color: gray;
-  }
-
-  .popup-sq {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
-  .popup-sq img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .NavBar{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 50%;
-    height: 186px;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-
-.spacer{
+    .spacer{
   position: absolute;
-  top: 225%;
+  top: 160%;
   left: 50%;
   transform: translate(50%, -50%);
 } 
+    @media only screen and (max-width: 1800px){
+     .spacer{
+     top: 1300px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+    }
 
-figure{
-    display: inline-block;
-    margin: 2px;
-  }
-  figure img{
-    vertical-align: middle;
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-  figure figcaption{
-    text-align: center;
-    transform: translateY(-20px);
-    font-size: x-large;
-  }
-
-  .home{
-    position: relative;
-  }
+    @media only screen and (max-width: 1450px){
+    .spacer{
+     top: 1800px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+    }
+      @media only screen and (max-width: 1300px){
+      .spacer{
+       top: 1800px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+      }
 
 </style>
 
@@ -601,7 +254,7 @@ figure{
 
 <body>
 <div id="page-wrapper">
-  <div class="topbar" style="top: 0px">
+    <div class="topbar" style="top: 0px">
     <div class="title-bar">
       <div class="title-bar-text">Navigation.bar</div>
       <div class="title-bar-controls">
@@ -613,7 +266,7 @@ figure{
     <div class="window-body">
       <div class="NavBar">
         <figure class="home">
-          <a href="/root/">
+          <a href="../index.html">
             <img src="../images/Icons/IconHome1.png" alt="">
             <figcaption>
               Home
@@ -622,7 +275,7 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder2.html">
+          <a href="Folder2.html">
             <img src="../images/Icons/Icon3D1.png" alt="">
             <figcaption>
               3D Art
@@ -631,25 +284,25 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder4.html">
+          <a href="Folder4.html">
             <img src="../images/Icons/IconDig1.png" alt="">
             <figcaption>
               Digital Art
             </figcaption>
           </a>
         </figure>
-
+        <!--
         <figure class="home">
-          <a href="/root/pages/Folder3.html">
+          <a href="Folder3.html">
             <img src="../images/Icons/IconPhoto1.png" alt="">
             <figcaption>
               Photography
             </figcaption>
           </a>
         </figure>
-
+      -->
         <figure class="home">
-          <a href="/root/pages/Folder5.html">
+          <a href="Folder5.html">
             <img src="../images/Icons/IconTrad1.png" alt="">
             <figcaption>
               Traditional Art
@@ -660,7 +313,7 @@ figure{
     </div>
   </div>
 
-  <div class="window" style="left: 3%; top: 256px">
+  <div class="window0">
     <div class="title-bar">
       <div class="title-bar-text">Anonymous_Woman</div>
       <div class="title-bar-controls">
@@ -687,14 +340,31 @@ figure{
     </div>
       <div class="popup-window-body">
         <h1>Anonymous Woman</h1>
+        <h4>
+          Fall 2022 <br>
+          Photoshop
+        </h4>
         <h5>
-          Sample
+          <i>Anonymous Woman </i>is a piece focusing on color theory and 
+          visual composition. The visual language of this piece invokes
+           both outer space and the flowing of a river. The piece’s composition
+            draws the viewer’s eye diagonally across the piece in part due to the
+             direction of the background but also due to the direction the woman is
+              facing. The smoke behind the woman invokes angelic imagery while helping 
+              to balance the composition and pull the eye from the background down to her 
+              pixelated face.
+              <br>
+              <br>
+              <i>Anonymous Woman </i> was created in Adobe Photoshop. 
+
         </h5>
-       <img src="../images/Website Art/Dig/FA.png" alt="Image 1-2" style="width: 80%;">
+        <a href="../images/Website Art/Dig/FA.png" target="_blank">
+         <img src="../images/Website Art/Dig/FA.png" alt="Image 1-2" style="width: 80%;">
+       </a>
      </div>
   </div>
 
-  <div class="window" style="left: 36%; top: 256px">
+  <div class="window3">
     <div class="title-bar">
       <div class="title-bar-text">Orange_Drink_Video</div>
       <div class="title-bar-controls">
@@ -711,7 +381,7 @@ figure{
   </div>
   
   
-  <div class="popup" id="popup2">
+  <div class="popup-sq" id="popup2">
     <div class="title-bar-pop">
       <div class="title-bar-text-pop">orangedrink.mp4</div>
       <div class="title-bar-controls-pop">
@@ -722,15 +392,26 @@ figure{
     </div>
       <div class="popup-window-body-video">
         <h1>Frothing Orange Liquid Advertisment</h1>
+        <h4>
+          Fall 2022 <br>
+          Photoshop - After Effects - Premiere Pro 
+        </h4>
         <h5>
-          Sample
+          <i>Frothing Orange Liquid </i>is a satirical video piece 
+          made to critique modern food and diet culture. This work mimics 
+          the upbeat and bright nature of modern advertisements while explicitly 
+          advertising the unhealthy effects of the product.
+          <br>
+          <br>
+          <i>Frothing Orange Liquid </i> was made in Adobe Photoshop, After Effects, and Premiere Pro. 
+
         </h5>
         <iframe class="video" src="https://www.youtube.com/embed/ENeYuMyH2W0?si=8xjbADzs-PqMp2Qm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
      </div>
   </div>
 
 
-<div class="window" style="left: 69%; top: 256px">
+<div class="window1">
   <div class="title-bar">
     <div class="title-bar-text">Urchins</div>
     <div class="title-bar-controls">
@@ -757,14 +438,117 @@ figure{
   </div>
     <div class="popup-window-body">
       <h1>Urchins</h1>
+      <h4>
+        Fall 2023 <br>
+        Photoshop
+      </h4>
       <h5>
-        I will kill for you, I have killed for you, I will kill again, you cannot stop me.
-      </h5>
-      <img src="../images/Website Art/Dig/Urchins.jpg" alt="Image 1-1" style="width: 75%;">
+        <i>Urchins</i> is a digital drawing done in photoshop of a 
+        barren undersea environment, highlighting the devastation caused 
+        by purple sea urchin populations in coastal kelp. The piece is very 
+        monotone in its colors, largely being blue and purple while a few plants
+         stand out as green. This piece was done before I had learned how to properly
+          use many digital tools but the environmental messaging of the piece remains important.
+          <br>
+          <br>
+          <i>Urchins</i> was created in Adobe Photoshop.
 
+      </h5>
+      <a href="../images/Website Art/Dig/UrchinsTextless.jpg" target="_blank">
+        <img src="../images/Website Art/Dig/UrchinsTextless.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
 
    </div>
 </div>
+
+<div class="window2">
+  <div class="title-bar">
+    <div class="title-bar-text">Vaporwave_Gallery</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="mySlides" style="display:block">
+      <img class="thumb" src="../images/Website Art/Dig/Aesthetic1.jpg" alt="" onclick="openPopup('popup4')">
+    </div>
+  </div>
+</div>
+
+<div class="popup-sq" id="popup4">
+  <div class="title-bar-pop"> 
+    <div class="title-bar-text-pop">vaporwave.gallery</div>
+    <div class="title-bar-controls-pop">
+      <button aria-label="Minimize-pop"></button>
+      <button aria-label="Maximize-pop" ></button>
+      <button aria-label="Close-pop" onclick="closePopup('popup4')" ></button>
+    </div>
+  </div>
+    <div class="popup-window-body">
+      <h1>Vaporwave Gallery</h1>
+      <h4>
+        Fall 2022 <br>
+        Photoshop
+      </h4>
+      <h5>
+        <i>Vaporwave Gallery</i> is a stylistic study 
+        in the vaporwave aesthetic. The three pieces all utilize similar 
+        colors to give them a warm and vibrant feel without becoming 
+        overly loud. Similarly each piece has a very vertical composition, 
+        each one forces the eye to be drawn towards the central subject of each piece.
+        <br>
+        <br>
+        All pieces in <i>Vaporwave Gallery</i> were created in Adobe Photoshop.
+ 
+      </h5>
+      <a href="../images/Website Art/Dig/Aesthetic1.jpg" target="_blank">
+        <img src="../images/Website Art/Dig/Aesthetic1.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/Dig/VaporDonaldsY.png" target="_blank">
+       <img src="../images/Website Art/Dig/VaporDonaldsY.png" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/Dig/TarotMoon.jpg" target="_blank">
+        <img src="../images/Website Art/Dig/TarotMoon.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
+   </div>
+</div>
+
+<div class="windowS">
+  <div class="title-bar">
+    <div class="title-bar-text">Sunken_Bells</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="mySlides" style="display:block">
+      <audio controls>
+        <source src="../images/Website Art/Dig/VideoArt3.mp3" type="audio/mpeg">
+      </audio>
+      <h5>
+        Spring 2025
+        <br>
+        <i>Sunken Bells</i> is an audio piece that invokes the both serene and ominous 
+        sounds of water to grab the listener’s attention. The audio sources for this 
+        piece were heavily edited to fully fit the intended audio aesthetic. Ice cubes 
+        spinning in a glass, a dishwasher, trains moving, and metal doors groaning were 
+        just some of the sources for the audio.
+        <br>
+        <br>
+        <i>Sunken Bells</i> was created using Adobe Premiere Pro.
+
+      </h5>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="spacer" style="background-color: #0a0a0a;opacity: 0;">Stop Looking At This</div>
 
 
 <!---->

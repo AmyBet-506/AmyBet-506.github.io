@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>3D Art</title>
+    <title>༚✧༚ 3D_Art.page ༚✧༚</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style2.css">
+
 <style>
-
-* {
-    scrollbar-width:thin;
-    scrollbar-color: #424242  #8a8a8a;
-    box-sizing: border-box;
-  }
-
-  html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  html{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  :any-link{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
-  button{
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-
 body{
     background-image: url("../images/skystarlight.gif");
     background-size:auto;
@@ -44,342 +17,20 @@ body{
     min-height: 100%;
   }
 
-  #page-wrapper{
-    position: relative;
-    min-height: 100%;
-    overflow: visible;
-  }
-
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 35em;
-    height: 7em;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-  .window{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    position: absolute;
-    width: 550px;
-   z-index: 99;
-  }
-  
-
-  .title-bar{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-  .title-bar-controls button[aria-label="Minimize"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Maximize"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.title-bar-controls button[aria-label="Close"]{
-    background-image: url(../images/IconCloseGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-}
-
-.window-body{
-  position: relative;
-  z-index: 99;
-}
-
-.title-bar-text{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-.mySlides{
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 500px;
-  height: 500px;
-  margin: auto;
-}
-
-
-.thumb{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-  .mySlides img:hover{
-    opacity: .5; 
-  }
-
-  .popup {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
- .popup-window-body {
-    font-family: Arial, sans-serif;
-    max-width: 99%;
-    max-height: 100%;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-   overflow-y: auto;
-   text-align: center;
- }
-
- .popup img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .popup iframe{
-    min-width: 75%;
-    min-height: 75%;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-   font-size: 30px;
-    color: white;
-   cursor: pointer;
-  } 
-
-  .title-bar-text-pop{
-    padding-left: 10px;
-    font-size: 1.5em;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]{
-    background-image: url(../images/IconClose-02.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Maximize-pop"]{
-    background-image: url(../images/IconMaximizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 4px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-controls-pop button[aria-label="Minimize-pop"]{
-    background-image: url(../images/IconMinimizeGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-  }
-
-  .title-bar-pop{
-    align-items: center;
-     background: linear-gradient(to right, #ce2e37, #d2771e, #d4cb1f, #81c220, #2582b5, #8f289f, #bd2f68);
-     background-color: rgba(0, 0, 0, 0);
-     background-position-x: 0%;
-     background-position-y: 0%;
-     background-repeat: repeat;
-     background-attachment: scroll;
-     background-image: linear-gradient(to right, rgb(206, 46, 55), rgb(210, 119, 30), rgb(212, 203, 31), rgb(129, 194, 32), rgb(37, 130, 181), rgb(143, 40, 159), rgb(189, 47, 104));
-      background-size: auto;
-      background-origin: padding-box;
-     background-clip: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3px;
-    padding-right: 2px;
-    padding-bottom: 9px;
-    padding-left: 3px;
-    margin-top: 3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    height: 30px;
-    width: 99%;
-    position: relative;
-    z-index: 5;
-  }
-
-  .title-bar-controls-pop button{
-    border: none;
-   border-radius: 0;
-   box-sizing: border-box;
-   color: transparent;
-   min-height: 20px;
-   min-width: 20px;
-   text-shadow: 0 0 #222;
-   background: silver;
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
-  }
-
-  .title-bar-controls-pop button[aria-label="Close-pop"]:hover{
-    background-image: url(../images/IconCloseGray.png);
-    width: 6px;
-    height: 2px;
-    background-position-x: left 3px;
-    background-position-y: bottom 4px;
-    background-repeat: no-repeat;
-    background-color: gray;
-  }
-
-  .popup-sq {
-    background: rgb(204, 203, 203);
-    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 3px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-
-  .popup-sq img {
-   width: auto;
-   display: block;
-    margin: 10px auto;
-  }
-
-  .NavBar{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.topbar{
-    background: rgb(204, 203, 203);
-   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
-    padding: 0px;
-    position: absolute;
-    width: 50%;
-    height: 186px;
-   z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-
-
-.spacer{
-  position: absolute;
-  top: 225%;
-  left: 50%;
-  transform: translate(50%, -50%);
-} 
-
-figure{
-    display: inline-block;
-    margin: 2px;
-  }
-  figure img{
-    vertical-align: middle;
-    cursor: url("../images/CursorStawberry1.png"), auto;
-  }
-  figure figcaption{
-    text-align: center;
-    transform: translateY(-20px);
-    font-size: x-large;
-  }
-
-  .home{
-    position: relative;
-  }
+    @media only screen and (max-width: 1450px){
+    .spacer{
+     top: 2800px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+    }
+      @media only screen and (max-width: 1300px){
+      .spacer{
+       top: 2400px;
+      left: 50%;
+      transform: translate(50%, -50%);
+    }
+      }
 
 </style>
 
@@ -601,7 +252,7 @@ figure{
     <div class="window-body">
       <div class="NavBar">
         <figure class="home">
-          <a href="/root/">
+          <a href="../index.html">
             <img src="../images/Icons/IconHome1.png" alt="">
             <figcaption>
               Home
@@ -610,7 +261,7 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder2.html">
+          <a href="Folder2.html">
             <img src="../images/Icons/Icon3D1.png" alt="">
             <figcaption>
               3D Art
@@ -619,25 +270,25 @@ figure{
         </figure>
 
         <figure class="home">
-          <a href="/root/pages/Folder4.html">
+          <a href="Folder4.html">
             <img src="../images/Icons/IconDig1.png" alt="">
             <figcaption>
               Digital Art
             </figcaption>
           </a>
         </figure>
-
+        <!--
         <figure class="home">
-          <a href="/root/pages/Folder3.html">
+          <a href="Folder3.html">
             <img src="../images/Icons/IconPhoto1.png" alt="">
             <figcaption>
               Photography
             </figcaption>
           </a>
         </figure>
-
+      -->
         <figure class="home">
-          <a href="/root/pages/Folder5.html">
+          <a href="Folder5.html">
             <img src="../images/Icons/IconTrad1.png" alt="">
             <figcaption>
               Traditional Art
@@ -648,7 +299,7 @@ figure{
     </div>
   </div>
 
-  <div class="window" style="left: 3%; top: 256px">
+  <div class="window1">
     <div class="title-bar">
       <div class="title-bar-text">Rose_Overture</div>
       <div class="title-bar-controls">
@@ -664,7 +315,7 @@ figure{
     </div>
   </div>
   
-  <div class="popup" id="popup1">
+  <div class="popup-sq" id="popup1">
     <div class="title-bar-pop"> 
       <div class="title-bar-text-pop">roseoverture.gallery</div>
       <div class="title-bar-controls-pop">
@@ -675,19 +326,45 @@ figure{
     </div>
       <div class="popup-window-body">
         <h1>Rose Overture</h1>
+        <h4>
+          Summer 2024 <br>
+          Blender - Adobe Substance Painter
+        </h4>
         <h5>
-          This gun was forged long before the golden age, a ceremonial weapon for the Empress of Roses. Centuries after the Guardian brought this weapon back into service, a handful of modifications made it a force to be reckoned with, a medium scope, high calibur rounds, paired with light conduits all along the barrel allowing for pure light to be infused into each round. The Empress may be gone but her gift lives on, still striking feat into the hearts of her newfound enemies. 
-        </h5>
-       <img src="../images/Website Art/3D/RoseOverture/Final1.png" alt="Image 1-2" style="width: 80%;">
-       <img src="../images/Website Art/3D/RoseOverture/Final2.png" alt="Image 1-2" style="width: 80%;">
-       <img src="../images/Website Art/3D/RoseOverture/Final3.png" alt="Image 1-2" style="width: 80%;">
-       <img src="../images/Website Art/3D/RoseOverture/Final5.png" alt="Image 1-2" style="width: 80%;">
-       <img src="../images/Website Art/3D/RoseOverture/Final6.png" alt="Image 1-2" style="width: 80%;">
+        <i>Rose Overture </i>is an exercise in ceremonial weapon design. 
+        The visual language of this piece highlights what an ornate 
+        ceremonial weapon may look like within a Sci-Fi environment. 
+        The rifle is not entirely pristine and has noticeable edge wear 
+        and some minor scratches to demonstrate that this weapon has been 
+        in use for a time but lacks the level of weathering that would be 
+        seen on a battle worn rifle. 
+        <br>
+        <br>
+        <i>Rose Overture</i> was modeled, sculpted, 
+        and rendered in Blender. The textures for this 
+        piece were created in Adobe Substance Painter and Photoshop.
 
+
+        </h5>
+        <a href="../images/Website Art/3D/RoseOverture/Final1.png" target="_blank">
+          <img src="../images/Website Art/3D/RoseOverture/Final1.png" alt="Image 1-2" style="width: 80%;">
+        </a>
+        <a href="../images/Website Art/3D/RoseOverture/Final2.png" target="_blank">
+          <img src="../images/Website Art/3D/RoseOverture/Final2.png" alt="Image 1-2" style="width: 80%;">
+        </a>
+        <a href="../images/Website Art/3D/RoseOverture/Final3.png" target="_blank">
+          <img src="../images/Website Art/3D/RoseOverture/Final3.png" alt="Image 1-2" style="width: 80%;">
+        </a>
+        <a href="../images/Website Art/3D/RoseOverture/Final5.png" target="_blank">
+          <img src="../images/Website Art/3D/RoseOverture/Final5.png" alt="Image 1-2" style="width: 80%;">
+        </a>
+        <a href="../images/Website Art/3D/RoseOverture/Final6.png" target="_blank">
+          <img src="../images/Website Art/3D/RoseOverture/Final6.png" alt="Image 1-2" style="width: 80%;">
+        </a>
      </div>
   </div>
 
-<div class="window" style="left: 36%; top: 256px">
+<div class="window2">
   <div class="title-bar">
     <div class="title-bar-text">Druid_Helmet</div>
     <div class="title-bar-controls">
@@ -714,22 +391,47 @@ figure{
   </div>
     <div class="popup-window-body">
       <h1>Druid Helmet</h1>
+      <h4>
+        Spring 2024 <br>
+        Zbrush - Maya - Adobe Substance Painter - Blender
+      </h4>
       <h5>
-        A forgotten helmet left by an esoteric group of druids.
+        Druids are often portrayed as sages and priests that 
+        revered the natural world, <i>Druid Helmet </i>leans into these common 
+        portrayals by depicting a mask made from a deer skull. The inspiration 
+        behind this piece partially comes from plague doctor masks, a large oversized 
+        mask that significantly changes the silhouette of the face and looks like, or in 
+        the case of <i>Druid Helmet</i>, is a skull. The choice to have this mask be a deer’s skull
+         rather than a bird’s was because deer skulls have a very odd shape and the antlers 
+         additionally change the face’s silhouette.
+         <br>
+         <br>
+         <i>Druid Helmet</i> was sculpted in ZBrush, retopologized in Maya, textured in Adobe Substance Painter, and rendered in Blender. 
+
       </h5>
-     <img src="../images/Website Art/3D/Deer/Druid1.png" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/3D/Deer/Druid2.png" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/3D/Deer/Druid3.png" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/3D/Deer/Druid4.png" alt="Image 1-1" style="width: 75%;">
-     <img src="../images/Website Art/3D/Deer/DruidClay.jpg" alt="Image 1-1" style="width: 75%;">
+      <a href="../images/Website Art/3D/Deer/Druid1.png" target="_blank">
+        <img src="../images/Website Art/3D/Deer/Druid1.png" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/3D/Deer/Druid2.png" target="_blank">
+        <img src="../images/Website Art/3D/Deer/Druid2.png" alt="Image 1-1" style="width: 75%;">
+      </a>      
+      <a href="../images/Website Art/3D/Deer/Druid3.png" target="_blank">
+        <img src="../images/Website Art/3D/Deer/Druid3.png" alt="Image 1-1" style="width: 75%;">
+      </a>      
+      <a href="../images/Website Art/3D/Deer/Druid4.png" target="_blank">
+        <img src="../images/Website Art/3D/Deer/Druid4.png" alt="Image 1-1" style="width: 75%;">
+      </a>
+      <a href="../images/Website Art/3D/Deer/DruidClay.jpg" target="_blank">
+        <img src="../images/Website Art/3D/Deer/DruidClay.jpg" alt="Image 1-1" style="width: 75%;">
+      </a>
 
    </div>
 </div>
 
 
-<div class="window" style="left: 69%; top: 256px">
+<div class="window3">
   <div class="title-bar">
-    <div class="title-bar-text">The_Duellist</div>
+    <div class="title-bar-text">The_Duelist</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -745,7 +447,7 @@ figure{
 
 <div class="popup-sq" id="popup3">
   <div class="title-bar-pop"> 
-    <div class="title-bar-text-pop">duellist.gallery</div>
+    <div class="title-bar-text-pop">duelist.gallery</div>
     <div class="title-bar-controls-pop">
       <button aria-label="Minimize-pop"></button>
       <button aria-label="Maximize-pop" ></button>
@@ -753,23 +455,53 @@ figure{
     </div>
   </div>
     <div class="popup-window-body">
-      <h1>The Duellist</h1>
+      <h1>The Duelist</h1>
+      <h4>
+        Fall 2023 <br>
+        Maya - Adobe Substance Painter
+      </h4>
       <h5>
-        I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+        <i>The Duelist </i>is a battle hardened character who has just enough armor to 
+        get by without sacrificing her mobility. Scratches and imperfections cover
+         her metal armor from previous battles along with her bandaged off hand. Asymmetrical
+          balance is achieved with her design by having her wear a glove on one hand and bandages on the other.
+          <br>
+          <br>
+          <i>The Duelist </i> was modeled and rendered in Maya with 
+          her hair being created using XGen. The textures for this piece 
+          were created in Adobe Substance Painter.
+
+
       </h5>
+<a href="../images/Website Art/3D/Serathine/Serathine1.jpg" target="_blank">
       <img src="../images/Website Art/3D/Serathine/Serathine1.jpg" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/Serathine2.jpg" target="_blank">
       <img src="../images/Website Art/3D/Serathine/Serathine2.jpg" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/Serathine3.jpg" target="_blank">
       <img src="../images/Website Art/3D/Serathine/Serathine3.jpg" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/Serathine4.jpg" target="_blank">
       <img src="../images/Website Art/3D/Serathine/Serathine4.jpg" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/Serathine5.jpg" target="_blank">
       <img src="../images/Website Art/3D/Serathine/Serathine5.jpg" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/SoulSword1.png" target="_blank">
       <img src="../images/Website Art/3D/Serathine/SoulSword1.png" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/SoulSword2.png" target="_blank">
       <img src="../images/Website Art/3D/Serathine/SoulSword2.png" alt="Image 1-1" style="width: 75%;">
+</a>
+<a href="../images/Website Art/3D/Serathine/SoulSword3.png" target="_blank">
       <img src="../images/Website Art/3D/Serathine/SoulSword3.png" alt="Image 1-1" style="width: 75%;">
+ </a>     
 
    </div>
 </div>
 
-<div class="window" style="left: 3%; top: 856px">
+<div class="window4">
   <div class="title-bar">
     <div class="title-bar-text">Mushling</div>
     <div class="title-bar-controls">
@@ -796,18 +528,38 @@ figure{
   </div>
     <div class="popup-window-body">
       <h1>Mushling</h1>
+      <h4>
+        Spring 2024 <br>
+        ZBrush
+      </h4>
       <h5>
-        At first these were thought to be predators, laying in wait in underground caverns hoping to get the drop on an unfortunate adventurer. Eventually some mushroom hugging druids explored the caverns and discovered these creatures are not infact predators, they don't even eat meat. Mushlings, as they are affectionately called due to their strange growth, live underground, scratching at the walls to expose roots and pull off moss. Their faces are structured similarly to spiders, in fact they have no relation at all, instead it is theorized to be an evolutionary trait to intimidate their would be predators along with the two large false eyes above their face. They have small mandibles for grasping onto broken bits of roots and loose moss which they then move into their mouths. Their backs are covered in hard plating and several spikes, due to the positioning of their face they are particularly vulnerable to ambushes and must have strong plating where they cannot see. Their growth has not determined use, some theorize their young rest in it, others believe it is for camoflagoue, in truth all assertions are valid. Mushlings live exlusively in humid caves with large lakes, seldomly venturing outside except in cases of great distress. Due to this, their eyes are hyper sensitive to sunlight, they struggle to see during the day while seeing perfectly at night, the few mushlings brought to the surface for domestication adopt a nocturnal sleeping pattern. Their meat is described as tough and gamey, they are primarily used in place of guard dogs, their look, size, and dolice demeanor result in them often beying left within sheep pens to scare away wolves during the night.
+       <i>Mushling </i>is a strange subterranean creature sculpted 
+        to look like an amalgamation of several living beings. 
+        The overall form of the creature draws inspiration from
+         gorillas while the face draws inspiration from both spiders 
+         and moths. The false eyes above the creature’s true head pair 
+         with its hulking figure and large frontal claws in order to give
+          it an intimidating appearance. While this creature is meant to 
+          look fearsome it is a largely docile herbivore. 
+          <br>
+          <br>
+          <i>Mushling </i>was sculpted and painted in ZBrush.
+
       </h5>
-     <img src="../images/Website Art/3D/Creature/Mushling1.jpg" alt="Image 1-2" style="width: 75%;">
-     <img src="../images/Website Art/3D/Creature/Mushling2.jpg" alt="Image 1-2" style="width: 75%;">
-     <img src="../images/Website Art/3D/Creature/Mushling3.jpg" alt="Image 1-2" style="width: 75%;">
-     <img src="../images/Website Art/3D/Creature/MushlingClay2.jpg" alt="Image 1-2" style="width: 75%;">
+      <a href="../images/Website Art/3D/Creature/Mushling1.jpg" target="_blank">
+       <img src="../images/Website Art/3D/Creature/Mushling1.jpg" alt="Image 1-2" style="width: 75%;">
+      </a>
+     <a href="../images/Website Art/3D/Creature/Mushling2.jpg" target="_blank">
+       <img src="../images/Website Art/3D/Creature/Mushling2.jpg" alt="Image 1-2" style="width: 75%;">
+      </a>
+     <a href="../images/Website Art/3D/Creature/Mushling3.jpg" target="_blank">
+       <img src="../images/Website Art/3D/Creature/Mushling3.jpg" alt="Image 1-2" style="width: 75%;">
+      </a>
 
    </div>
 </div>
 
-<div class="window" style="left: 36%; top: 856px">
+<div class="window7">
 <div class="title-bar">
   <div class="title-bar-text">Reflection</div>
   <div class="title-bar-controls">
@@ -834,17 +586,27 @@ figure{
 </div>
   <div class="popup-window-body">
     <h1>Reflection</h1>
+    <h4>
+      Fall 2024 <br>
+      Blender
+    </h4>
     <h5>
-      I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+      <i>Reflection</i> is a surrealist visual piece, drawing inspiration from the transgender pride flag. The three colors of the flag are featured prominently and heavily influence the colors of the piece. 
+      <br>
+      <br>
+      This piece was created entirely in Blender. The statue is a 3D scan of <i>Venus de Milo</i>, circa 200 BC. 
+
     </h5>
-   <img src="../images/Website Art/3D/Reflection.jpg" alt="Image 1-1" style="max-width: 95%;">
+    <a href="../images/Website Art/3D/Reflection.jpg" target="_blank">
+      <img src="../images/Website Art/3D/Reflection.jpg" alt="Image 1-1" style="max-width: 95%;">
+   </a>
  </div>
 </div>
 
 
-<div class="window" style="left: 69%; top: 856px">
+<div class="window5">
 <div class="title-bar">
-  <div class="title-bar-text">Hags_Potion</div>
+  <div class="title-bar-text">Hags_Bottle</div>
   <div class="title-bar-controls">
     <button aria-label="Minimize"></button>
     <button aria-label="Maximize"></button>
@@ -860,7 +622,7 @@ figure{
 
 <div class="popup-sq" id="popup6">
   <div class="title-bar-pop"> 
-    <div class="title-bar-text-pop">hagpotion.gallery</div>
+    <div class="title-bar-text-pop">hagbottle.gallery</div>
     <div class="title-bar-controls-pop">
       <button aria-label="Minimize-pop"></button>
       <button aria-label="Maximize-pop" ></button>
@@ -868,16 +630,32 @@ figure{
     </div>
   </div>
     <div class="popup-window-body">
-      <h1>Chappell Roan Gallery V</h1>
+      <h1>Hag's Bottle</h1>
+      <h4>
+        Spring 2025 <br>
+        Blender - Adobe Substance Painter
+      </h4>
       <h5>
-        I will kill for you, I have killed for you, I will kill again, you cannot stop me.
-      </h5>
-      <img src="../images/Website Art/3D/HagsBottleCol.png" alt="Image 1-1" style="max-width: 95%;">
-      <img src="../images/Website Art/3D/HagsBottleClay.png" alt="Image 1-1" style="max-width: 95%;">
+        <i>Hag’s Bottle </i>is a casual bottle that a hag might use 
+        for her simpler needs. It is a ceramic bottle that does
+         not look particularly frightening or enticing either. While
+          the teeth clearly spell danger, the viney design around the 
+          bottle gives it an almost welcoming look.
+        <br>
+        <br>
+        <i>Hag’s Bottle </i> was modeled, sculpted, and rendered in Blender. The textures for this piece were made in Adobe Substance Painter.
+
+        </h5>
+      <a href="../images/Website Art/3D/HagsBottleCol.png" target="_blank">
+        <img src="../images/Website Art/3D/HagsBottleCol.png" alt="Image 1-1" style="max-width: 95%;">
+      </a>
+      <a href="../images/Website Art/3D/HagsBottleClay.png" target="_blank">
+        <img src="../images/Website Art/3D/HagsBottleClay.png" alt="Image 1-1" style="max-width: 95%;">
+      </a>
     </div>
   </div>
 
-  <div class="window" style="left: 3%; top: 1456px">
+  <div class="window6">
     <div class="title-bar">
       <div class="title-bar-text">Weapons_Collection</div>
       <div class="title-bar-controls">
@@ -903,28 +681,69 @@ figure{
         </div>
       </div>
         <div class="popup-window-body">
-          <h1>Chappell Roan Gallery V</h1>
+          <h1>Weapon Collection</h1>
+          <h4>
+            Axe <br>
+            Fall 2023 <br>
+            Maya - Adobe Substance Painter
+          </h4>
           <h5>
-            I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+            This axe was designed to have a visible fire enchantment.
+            <br>
+            <br>
+          This piece was rendered in Maya. The textures for this piece were created in Adobe Substance Painter.
           </h5>
+          <a href="../images/Website Art/3D/Weapons/DemoAxe1.jpg" target="_blank">
           <img src="../images/Website Art/3D/Weapons/DemoAxe1.jpg" alt="Image 1-1" style="max-width: 75%;">
+          </a>
+          <a href="../images/Website Art/3D/Weapons/DemoAxe2.jpg" target="_blank">
           <img src="../images/Website Art/3D/Weapons/DemoAxe2.jpg" alt="Image 1-1" style="max-width: 75%;">
+          </a>
+          <h4>
+            Soul Sword <br>
+            Fall 2023 <br>
+            Maya - Adobe Substance Painter
+          </h4>
           <h5>
-            I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+            This sword is the same sword that appears with <i>The Duelist</i>, however it is also a standalone piece. This sword was designed to have a very unique guard design that contains a magical crystal. 
+            <br>
+            <br>
+            This piece was modeled and rendered in Maya. The textures for this piece were created in Adobe Substance Painter.
+
           </h5>
-          <img src="../images/Website Art/3D/Weapons/Weapon01_Bettencourt.jpg" alt="Image 1-1" style="max-width: 95%;">
-          <img src="../images/Website Art/3D/Weapons/Weapon03_Bettencourt.jpg" alt="Image 1-1" style="max-width: 95%;">
-          <h5>
-            I will kill for you, I have killed for you, I will kill again, you cannot stop me.
-          </h5>
+          <a href="../images/Website Art/3D/Serathine/SoulSword1.png" target="_blank">
           <img src="../images/Website Art/3D/Serathine/SoulSword1.png" alt="Image 1-1" style="max-width: 75%;">
+          </a>
+          <a href="../images/Website Art/3D/Serathine/SoulSword2.png" target="_blank">
           <img src="../images/Website Art/3D/Serathine/SoulSword2.png" alt="Image 1-1" style="max-width: 75%;">
+          </a>
+          <a href="../images/Website Art/3D/Serathine/SoulSword3.png" target="_blank">
           <img src="../images/Website Art/3D/Serathine/SoulSword3.png" alt="Image 1-1" style="max-width: 75%;">
+          </a>
+          <h4>
+            Mace <br>
+            Fall 2023 <br>
+            Maya - Adobe Substance Painter 
+          </h4>
+          <h5>
+            This mace is a plain and simple bronze weapon with a slightly unconventional design for its head. 
+            <br>
+            <br>
+            This piece was modeled and rendered in Maya. The textures for this piece were created in Adobe Substance Painter.
+
+          </h5>
+          <a href="../images/Website Art/3D/Weapons/Weapon01_Bettencourt.jpg" target="_blank">
+          <img src="../images/Website Art/3D/Weapons/Weapon01_Bettencourt.jpg" alt="Image 1-1" style="max-width: 95%;">
+          </a>
+          <a href="../images/Website Art/3D/Weapons/Weapon03_Bettencourt.jpg" target="_blank">
+          <img src="../images/Website Art/3D/Weapons/Weapon03_Bettencourt.jpg" alt="Image 1-1" style="max-width: 95%;">
+          </a>
+          
 
         </div>
       </div>
 
-      <div class="window" style="left: 36%; top: 1456px">
+      <div class="window8">
         <div class="title-bar">
           <div class="title-bar-text">After_Hours</div>
           <div class="title-bar-controls">
@@ -950,13 +769,79 @@ figure{
             </div>
           </div>
             <div class="popup-window-body">
-              <h1>Chappell Roan Gallery V</h1>
+              <h1>After Hours</h1>
+              <h4>
+                Summer 2023 <br>
+                Blender - Adobe Substance Painter - Photoshop
+              </h4>
               <h5>
-                I will kill for you, I have killed for you, I will kill again, you cannot stop me.
+                <i>After Hours</i> is a small scene of a fictional late night talk show studio after filming. The empty set allows for a liminal feel to take hold while the familiar visuals make it seem familiar.
+<br>
+<br>
+                <i>After Hours</i> was modeled and rendered in Blender. The textures for this piece were partially created in Adobe Substance Painter and Photoshop.
+
               </h5>
-              <img src="../images/Website Art/3D/Afterhours.jpg" alt="Image 1-1" style="max-width: 95%;">
+              <a href="../images/Website Art/3D/Afterhours.jpg" target="_blank">
+                <img src="../images/Website Art/3D/Afterhours.jpg" alt="Image 1-1" style="max-width: 95%;">
+              </a>
             </div>
           </div>
+
+          
+  <div class="window0">
+    <div class="title-bar">
+      <div class="title-bar-text">The_Cleric</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="mySlides" style="display:block">
+        <img class="thumb" src="../images/Website Art/3D/Staeda/FinalRender1.PNG" alt="" onclick="openPopup('popup9')">
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup-sq" id="popup9">
+    <div class="title-bar-pop"> 
+      <div class="title-bar-text-pop">cleric.gallery</div>
+      <div class="title-bar-controls-pop">
+        <button aria-label="Minimize-pop"></button>
+        <button aria-label="Maximize-pop" ></button>
+        <button aria-label="Close-pop" onclick="closePopup('popup9')" ></button>
+      </div>
+    </div>
+      <div class="popup-window-body">
+        <h1>The Cleric</h1>
+        <h4>
+          Spring 2026 <br>
+          Blender - Adobe Substance Painter
+        </h4>
+        <h5>
+          By evoking imagery similar to statues of Justice there is an air 
+          of familiarity about The Cleric, however her spikey silhouette and 
+          dark color palette create an imposing visual language rather than one 
+          of fairness. Within this piece blind justice is subverted to become blind 
+          faith, with the hands of her god directly blinding her as she carries out her 
+          god’s own justice. The golden spikes on the helmet create visuals reminiscent of 
+          a nimbus from traditional western religious art which informs viewers of <i>The Cleric’s</i>
+          holiness at a glance. Her long flowing skirt was simulated to give it a bit of a weighty look.
+          <br>
+          <br>
+          The Cleric was modeled, sculpted, and rendered entirely in Blender. The textures for her were created in Adobe Substance Painter.
+
+
+        </h5>
+        <a href="../images/Website Art/3D/Staeda/FinalRender1.PNG" target="_blank">
+          <img src="../images/Website Art/3D/Staeda/FinalRender1.PNG" alt="Image 1-2" style="width: 80%;">
+       </a>
+       <a href="../images/Website Art/3D/Staeda/FinalRender3.PNG" target="_blank">
+         <img src="../images/Website Art/3D/Staeda/FinalRender3.PNG" alt="Image 1-2" style="width: 80%;">
+        </a>
+     </div>
+  </div>
 
 <div class="spacer" style="background-color: #0a0a0a;opacity: 0;">Stop Looking At This</div>
 
